@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patagonia - Landing Page</title>
-    <!-- Google Fonts for clean typography -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
+    <header class="site-header">
+        <div class="brand-mark">Head.</div>
 
-    <div class="site-container">
-        <!-- Header -->
-        <header class="site-header">
-            <div class="brand-mark">Head.</div>
-            <nav class="primary-navigation">
-                <ul>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
+        <!-- Desktop Navigation (Shows Works, Services, Contacts) -->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
 
-        <!-- Hero Content -->
-        <main class="hero-section">
-            <h1>Patagonia</h1>
-            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.<br>Donec viverra eleifend lacus, vitae ullamcorper.</p>
-        </main>
+        <!-- Tablet Navigation (Shows Link Item, Link Item, Link Item) -->
+        <nav class="tablet-nav">
+            <ul>
+                <li><a href="#link">Link Item</a></li>
+                <li><a href="#link">Link Item</a></li>
+                <li><a href="#link">Link Item</a></li>
+            </ul>
+        </nav>
 
-        <!-- Responsive Image Container -->
-<div class="hero-image-container">
-    <picture>
-        <!-- Mobile version for screens up to 768px wide -->
-        <media-query media="(max-width: 768px)" srcset="images/mobileversion.png"></media-query>
-        <!-- Tablet version for screens up to 1024px wide -->
-        <source media="(max-width: 1024px)" srcset="images/tabletversion.png">
-        <!-- Default Desktop version -->
-        <img src="images/desktopversion.png" alt="Patagonia landscape with horses">
-    </picture>
+        <!-- Mobile Menu Icon -->
+        <div class="mobile-menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero Content -->
+    <main class="hero-section">
+        <h1>Patagonia</h1>
+        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.<br>Donec viverra eleifend lacus, vitae
+            ullamcorper.</p>
+    </main>
+
+    <!-- Responsive Image Container using <picture> -->
     <div class="hero-image-container">
-    <picture>
-        <source media="(max-width: 768px)" srcset="images/mobileversion.png">
-        <source media="(max-width: 1024px)" srcset="images/tabletversion.png">
-    </picture>
-</div>
-</div>
-
-</div>
+        <picture>
+            <source media="(max-width: 768px)" srcset="images/mobileversion.png">
+            <source media="(max-width: 1024px)" srcset="images/tabletversion.png">
+            <img src="images/desktopversion.png" alt="Patagonia landscape with horses">
+        </picture>
+    </div>
 
 </body>
+
 </html>
